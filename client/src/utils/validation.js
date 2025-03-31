@@ -12,6 +12,6 @@ export function validateForm({ interval, ip }) {
       errors.ip = 'IP address must be a valid IPv4 address (0-255)';
     }
   
-    return errors;
+   return errors;
   }
   
