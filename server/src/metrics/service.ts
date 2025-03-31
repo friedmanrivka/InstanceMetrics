@@ -31,7 +31,7 @@ const getInstanceIdByIp = async (ip: string): Promise<string | null> => {
 export const getCpuMetrics = async (input: MetricInput): Promise<MetricDataPoint[]> => {
   const instanceId = await getInstanceIdByIp(input.ip);
   if (!instanceId) {
-    throw new Error(`Instance with IP ${input.ip} not found`);  // 404 במצב הזה
+    throw new Error(`Instance with IP ${input.ip} not found`);  
   }
   const params = {
     StartTime: new Date(input.startTime),
