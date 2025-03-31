@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "es6",                 // קומפילציה ל-ES6
+      "module": "commonjs",            // מודולים בסגנון Node.js
+      "outDir": "./dist",              // תיקיית build
+      "rootDir": "./src",              // קבצי מקור
+      "strict": true,                  // הקפדה על טיפוסים
+      "esModuleInterop": true,         // תמיכה ב-import כמו ב-ES6
+      "resolveJsonModule": true,       // אפשרות לייבא קבצי JSON
+      "forceConsistentCasingInFileNames": true // אכיפת רישיות עקבית
+    },
+    "include": ["src"],                // אילו קבצים לקמפל
+    "exclude": ["node_modules"]        // מה לא לקמפל
+  }
+  
